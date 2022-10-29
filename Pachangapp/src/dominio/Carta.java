@@ -11,7 +11,7 @@ public class Carta {
 
 	public Carta(String nombre, int puntos, boolean categoria, int coste) {
 		super();
-		this.nombre = nombre;
+		this.nombre = nombre; //nombre
 		this.puntos = puntos;
 		this.categoria = categoria;
 		this.coste = coste;
