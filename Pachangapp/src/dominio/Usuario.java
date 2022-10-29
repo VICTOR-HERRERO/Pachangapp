@@ -85,8 +85,10 @@ public class Usuario implements Serializable {
 			fechaUltimoLogin = sdf.parse(fuli);
 		} catch (ParseException e) {
 			//Si no se puede convertir porque el String es incorrecto
-			//ponle a la fecha de nacimiento la fecha actual, lo cual es un outlier de manual y se nota
-			fechaUltimoLogin = new Date(System.currentTimeMillis());
+			//ponle 0000-00-00, que es un outlier de manual y se nota
+			fechaUltimoLogin = new Date(0000-00-00);
+			//fechaUltimoLogin = new Date(System.currentTimeMillis()); //para poner la fecha actual, sta bien saberlo
+			
 		}
 	}
 		// Dos usuarios son iguales si TODOS sus campos son iguales
